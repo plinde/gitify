@@ -146,6 +146,14 @@ export class Sidebar extends React.Component {
                 onClick={() => this.props.toggleSettingsModal()}
               />
             </li>
+
+            <li className="nav-item text-white">
+              <i
+                title="Open All"
+                className="nav-link fa fa-window-maximize"
+                onClick={() => console.log(notificationsCount) }
+              />
+            </li>
           </ul>}
 
         {isGitHubLoggedIn &&

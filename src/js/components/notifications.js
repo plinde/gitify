@@ -17,6 +17,11 @@ export default class AccountNotifications extends React.Component {
       object.getIn(['repository', 'full_name'])
     );
 
+    console.log(notifications.size);
+    
+    console.log(notiications.className);
+    // valueSeq.map(obj => obj.first().getIn(['repository', 'full_name'])));
+
     return (
       <ReactCSSTransitionGroup
         transitionName="repository"

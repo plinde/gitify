@@ -17,15 +17,18 @@ export class SingleNotification extends React.Component {
   };
 
   pressTitle() {
-    this.openBrowser();
+    
+    // console.log(this.props.notification.get('url'))
 
-    if (this.props.markOnClick) {
-      this.markAsRead();
-    }
+    // this.openBrowser();
+
+    // if (this.props.markOnClick) {
+    //   this.markAsRead();
+    // }
   }
 
   openBrowser() {
-    const url = generateGitHubWebUrl(
+  const url = generateGitHubWebUrl(
       this.props.notification.getIn(['subject', 'url'])
     );
     shell.openExternal(url);

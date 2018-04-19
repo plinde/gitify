@@ -31,12 +31,14 @@ export class RepositoryNotifications extends React.Component {
     const { hostname, repo } = this.props;
     const avatarUrl = repo.first().getIn(['repository', 'owner', 'avatar_url']);
 
+    // console.log(hostname);
     return (
       <div>
         <div className="repository d-flex px-3 py-2 justify-content-between">
           <div className="info pr-3">
             <img className="avatar img-fluid mr-2" src={avatarUrl} />
-            <span onClick={() => this.openBrowser()}>
+            {/* <span onClick={() => this.openBrowser()}> */}
+            <span onClick={() => console.logo(this.avatarUrl)}>
               {this.props.repoName}
             </span>
           </div>
